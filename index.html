@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript | EASV teachings</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <h2>This is the main page:</h2>
+            <p>Here you will find information about the course, Javascript in general an a link to the GitHub Repository
+            Link to GitHub or to clone from = <a href="https://github.com/kristian-witttrup/JavaScript"> https://github.com/kristian-witttrup/JavaScript</a></p>
+
+
+            <p><i>Writing/creating the link to JavaScript in the most optimal place in HTML</i></p>
+            <p>Placing the  </p>
+            <blockquote>
+              <pre>
+                <xmp>
+                    <script src="js/main.js"></script>
+                </xmp>
+              </pre>
+            </blockquote>
+            <p>in the "head" or after last "div" - right click and view sourcecode to check it out manually.</p>
+
+            <p>When linking the JavaScript by HTML, you can add an HTML attribute. Attributes are in this case the two following.
+            <br>=> "defer" helps load all at the same time like (though it is serialized - so it read one before the next javascript)
+            <br>=> "async" which also means is it will be loading at the same time as the HTML (asynchronous) : Problems with async when more then one JavaScript File.
+            </p>
+
+        </div>
+        <!-- <script src="js/main.js"></script>  Loads js after HTML in loading to browser (can create conflicts depending on how your JS is being built/processed/if js is creating content/etc)  -->
+    </body>
+</html>

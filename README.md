@@ -13,17 +13,19 @@ It will contain information and lectures on;
 
 
 **Knowledge and skills in:**
-* Bullet list
-* DOM (Document Object Model)
+
+
 * Operators
+* Conditional Statements
 * Variables
 * Functions
-* Arrays
 * Objects
+* Arrays
 * Loops
-* Conditional Statements
-* RegExp
+
+* DOM (Document Object Model)
 * Events
+* RegExp
 * Cookies
 * ...
 
