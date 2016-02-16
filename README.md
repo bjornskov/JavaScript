@@ -4,7 +4,7 @@ Used for teaching on EASV
 This following examples and files are used to improve the skill of the students on EASV in JavaScript.
 It will contain information and lectures on;
 
-How to write JavaScript
+**Strong text** How to write JavaScript
 Create dynamic scripts like 
 * Gallery with thumbnails
 * Slideshow
@@ -13,7 +13,7 @@ Create dynamic scripts like
 ...
 
 
-Knowledge and skills in:
+**Strong text** Knowledge and skills in:
 * Bullet list
 * DOM (Document Object Model)
 * Operators
