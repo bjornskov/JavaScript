@@ -43,6 +43,9 @@ alert(grossPriceOfShoes);
 
 
 
+
+
+
 /*
 
 var carBMW = 300000;
