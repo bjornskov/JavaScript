@@ -11,6 +11,7 @@ Debugging code
 
 
 Knowledge and skills in:
+Markup : * Bullet list
 DOM (Document Object Model)
 Operators
 Variables
