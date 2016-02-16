@@ -26,3 +26,5 @@ It will contain information and lectures on;
 * Events
 * Cookies
 * ...
+
+and much more ..
