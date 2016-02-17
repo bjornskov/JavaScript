@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators | EASV teachings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/main.js" defer></script>-->
+    <script src="js/operators.js" defer></script>
+
+</head>
+<body>
+<div>
+    <h2>This is the Operators page:</h2>
+    <p>Here you will find information about the course, Javascript in general an a link to the GitHub Repository
+        Link to GitHub or to clone from = <a href="https://github.com/kristian-witttrup/JavaScript"> https://github.com/kristian-witttrup/JavaScript</a></p>
+
+    <p>Why bother with using a Variable when we can just type the actual number in a calculator fx.</p>
+    <p>Lets imagine that we want to calculate taxes with different values - like Value Added Tax (VAT) when you shop online(outside DK).</p>
+
+
+    <p>
+        JavaScript Operators - Operator are characters used to operate on variables
+    </p>
+    <h4>Arithmetic operators:</h4>
+    <ul>
+        <li>+   Adding numbers and merging strings</li>
+        <li>-   Subtraction</li>
+        <li>*   Multiplying</li>
+        <li>/   Dividing</li><br>
+        <li>%   The remainder of the division (mod operator)</li>
+        <br><li>=   Assigning value</li>
+        <li>+=  </li>
+        <li>-=  </li>
+        <li>/=  </li>
+        <li>*=  </li>
+        <li>%=  </li>
+        <li>++  Incrementation (auto adding +1 to each new item. fx: if you create a table with different cars models, you can have a column with a number starting from 1, and with each now row it automatically adds +1, so the second row holds 2, third row gets the number 3 etc.</li>
+        <li>--  Decrementation : the other way </li>
+    </ul>
+
+    <p>there is actually 4 different types of the incrementation and decrementation</p>
+    <p>PRE means before, and POST means after. Using POST in an alert means, that the viewer see the value of x, but after they alertbox is closed, the javascript add +1 to it now. </p>
+    <ul>
+        <li>x++ POST incrementation</li>
+        <li>x-- POST decrementation</li>
+        <li>++x PRE incrementation</li>
+        <li>--x PRE decrementation</li>
+    </ul>
+
+    <a>The modules % operator can be tricky to understand - use this <a href="http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oper_mod"> link</a> and go test and try changing the values on w3school</p>
+
+    <h4>Relational operators (comparison operators)</h4>
+    <p>They can be used fx when you want to check if someone who is typing in their password, and then need to type it again to make sure the did it correctly. </p>
+
+    <ul>
+        <li>==  Equals to/comparing</li>
+        <li>=== Identical, but variables must be the same type too (intergers, strings, ...)</li>
+        <li>!=  Not equal too</li>
+        <li><   Less then</li>
+        <li>>   Greater then</li>
+        <li><=  Less or equal</li>
+        <li>>=  Greater or equal</li>
+    </ul>
+
+    <h4>Logical operators</h4>
+        <ul>
+            <li>0 - False</li>
+            <li>1 - True</li>
+            <li>! - NOT
+                <ul>
+                    <li>!(0) - change the result to 1</li>
+                    <li>!(1) - change the result to 0</li>
+                </ul>
+            </li>
+            <li>&&  Conjuction - AND</li>
+            <li>||  Disjunction - OR  (alternative)</li>
+        </ul>
+
+        <p>Fx if you have a HTML form where you have password1 and password2 and a checkbox for newsletters and you want to check if the passwords match and they checked the box</p>
+
+        <blockquote>
+              <pre>
+                <xmp>
+                    password1 == password2 && isBoxChecked == 1
+                </xmp>
+              </pre>
+        </blockquote>
+        <p>So you want to make a conjunctions(&&) with two expresssions(==) at once</p>
+        <p>
+        Example: <br>
+
+        <table style="width:20%">
+            <tr>
+                <td>expr1</td>
+                <td>expr2</td>
+                <td>result</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        CONJUNCTION is TRUE only if both EXPRESSIONS are TRUE in the same TIME
+        </p>
+        <p>
+        <table style="width:20%">
+            <tr>
+                <td>expr1</td>
+                <td>expr2</td>
+                <td>result</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        DISJUNCTION (alternative). If the number 1 exist in the row, that will be the result now. <br>
+        DISJUNCTION is FALSE only when both EXPRESSIONS are FALSE in the same TIME.
+        </p>
+
+</div>
+</body>
+</html>
