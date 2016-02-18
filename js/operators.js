@@ -41,3 +41,8 @@ z += 2; // is the same as z = z + 2;
 //      0    1      1     <= Check the disjunction table. Try to remove the alert box by changing our code.
 // if(x < y || y == 3)
 //    alert("test");
+
+
+
+
+//BITWISE OPERATORs
