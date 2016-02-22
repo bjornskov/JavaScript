@@ -10,6 +10,7 @@ var classCourses = [
 
 var result = document.getElementById("result");
 var result_second = document.getElementById("result_second");
+var result_bc = document.getElementById("result_bc");
 
 // One way to write all out is to do this -> not the most clever way though
 /*
@@ -95,6 +96,8 @@ printCourses("webdevskill");
 printCourses("programmingskills");
 
 */
+
+/*
 function printCourses(idOfUlList) {
 
     var courses = document.getElementById(idOfUlList).getElementsByTagName("li");
@@ -113,3 +116,74 @@ function printCourses(idOfUlList) {
 
 printCourses("webdevskill");
 printCourses("programmingskills");
+
+    */
+
+
+// For loops - looks alot like a while loops. Just a different name tbh.
+/*
+var i = 0;
+
+
+for(;i < 5;)
+{
+    document.getElementById("result_for").innerHTML += i + "<br>";
+
+    i++;
+}
+*/
+
+// We can change the look of a for loop to this instead of the previous.
+// We can use the ; in the for(;;) as separators for things that need to happen before, and then again after the loop. So setting the var "i" to 0, and doing increment after with i++
+/*
+for(var i = 0 ;i < 5 ;i++)
+{
+    document.getElementById("result_for").innerHTML += i + "<br>";
+
+}
+// Its cleaner and its all inside the loop now. They do the same though. So choose what you like.
+*/
+
+// Lets change the numbers to our classCourses instead.
+/*
+for(var i = 0 ;i < classCourses.length ;i++)
+{
+    document.getElementById("result_for").innerHTML += classCourses[i] + "<br>";
+
+}
+*/
+
+// Break and continue
+/*
+for (var i = 0; i < 5; i++)
+{
+    //if (i === 2) // here we create a break when i equals 2. So it will print 0, 1 and no more.
+    //    break;
+
+    // if (i === 2) // continue is working like a break but after breaking once, the loop continues after. By using continue we basically just skip the number 2 and continue after it.
+    // continue;
+
+    document.getElementById("result_bc").innerHTML += i + "<br>";
+}
+    */
+
+// Lets try something without numbers
+/*
+var webdevskill = document.getElementById("webdevskill").getElementsByTagName("li");
+
+for (var i = 0; i < webdevskill.length; i++);
+{
+       webdevskill[i].innerHTML += "even";
+}
+*/
+// Lets do something more - we want to implement an odd/even counter
+var programmingskills = document.getElementById("programmingskills").getElementsByTagName("li");
+
+for(i = 0; i < programmingskills.length; i++)
+{
+    if(i  % 2 !== 0) // we tell that i % 2 !==(negative/opposite) 0, that it should start from another item. Try testing without the !== and using === instead
+        programmingskills[i].innerHTML += " even ";  // prints out even in our <li> with programmingskills
+    else
+        continue;
+
+}
