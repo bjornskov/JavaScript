@@ -22,3 +22,15 @@ CTRL + HOME - jumping to the beginning of file
 CTRL + END - jumping to the end of file
 CTRL + SHIFT + HOME - selecting text from caret to the beginning of file
 CTRL + SHIFT + END - selecting text from caret to the end of file
+
+
+MAC keymap/shortcuts:
+
+Alt + i = |   (pipe | vertical line)
+Shift + Alt + 3 = $
+Alt + 3 = §
+Alt + 6 = ™
+Shift + Alt + 7 = \
+Alt + ¨ = ~
+Alt + 8/9 = [ ]
+Alt + shift + 8/9 = { }
