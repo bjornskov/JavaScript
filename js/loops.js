@@ -184,6 +184,6 @@ for(i = 0; i < programmingskills.length; i++)
     if(i  % 2 !== 0) // we tell that i % 2 !==(negative/opposite) 0, that it should start from another item. Try testing without the !== and using === instead
         programmingskills[i].innerHTML += " even ";  // prints out even in our <li> with programmingskills
     else
-        //continue;
+        continue;
 
 }
