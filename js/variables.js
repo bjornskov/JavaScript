@@ -67,6 +67,3 @@ var buy = buyBMW + buyMerc;
 alert("you bought = " + (amount + amount) + " cars in the color = " + color1 + " and the totalt cost is = " + buy);
 
     */
-
-
-test sehgsoeh j
