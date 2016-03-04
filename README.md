@@ -30,3 +30,5 @@ It will contain information and lectures on;
 * ...
 
 and much more ..
+
+Testing through gitHub - https://rawgit.com/kristian-witttrup/JavaScript/master/index.html
