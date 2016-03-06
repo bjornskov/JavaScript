@@ -23,7 +23,7 @@ result.innerHTML += classCourses[5]+"<br>";
 */
 
 // Let try and create a loop instead that just goes through all the elements. In this case the array.
-/*
+
 var i = 0; // initializing variable i. So i know where to start from.
 
 while(i < classCourses.length) // Breakdown. "i" starts from 0, which is the "HTML" or [0]. Then continues to run because we have that when "i" is smaller then "classCourses.length"(which is converting it into a number) we just run the loops as many times as the array is long and no more.
@@ -34,7 +34,7 @@ while(i < classCourses.length) // Breakdown. "i" starts from 0, which is the "HT
 
     i++;
 }
-*/
+
 
 
 // Now we are taking the HTML writing content and using that as our array and printing out results. If we add to the <li> in our html it will be added here aswell.
@@ -177,6 +177,7 @@ for (var i = 0; i < webdevskill.length; i++);
 }
 */
 // Lets do something more - we want to implement an odd/even counter
+/*
 var programmingskills = document.getElementById("programmingskills").getElementsByTagName("li");
 
 for(i = 0; i < programmingskills.length; i++)
@@ -187,3 +188,4 @@ for(i = 0; i < programmingskills.length; i++)
         continue;
 
 }
+*/

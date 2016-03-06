@@ -43,3 +43,7 @@ ul li a {
 ul li .price {
   margin: 0 0 10px;
 }
+
+.item-2:before {
+  content: "price:";
+}
