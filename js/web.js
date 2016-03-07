@@ -1,115 +1,72 @@
+var VAT = 25;
+var calculatedVAT = (1 + VAT * (1/100));
+
+
+function newSum() {
+
+    VAT = document.form.sum1.value;
+    document.getElementById("result2").innerHTML += product_names[1].price * (1 + VAT * (1/100));
+   // alert(product_names[1].price * (1 + VAT * (1/100)));
+
+
+};
 
 var product_names = [
       {
-      "type": "Sneakers", // new property for this object
-      "price": 250
+          "img": "http://placehold.it/200x120",
+          "type": "Sneakers", // new property for this object
+          "price": 250
       },
       {
-      "type": "Boots", // new property for this object
-      "price": 350
+          "img": "http://placehold.it/200x120",
+          "type": "Boots", // new property for this object
+          "price": 350
+      },
+      {
+          "img": "http://placehold.it/200x120",
+          "type": "Heels", // new property for this object
+          "price": 450
+      },
+      {
+          "img": "http://placehold.it/200x120",
+          "type": "Cowboyboots", // new property for this object
+          "price": 550
       }
-
-      /*  "Sneakers",
-        "Boots",
-        "High Heels",
-        "Dressshoes" */
     ];
-
-    var product_price = [
-        "200",
-        "300",
-        "400",
-        "500"
-    ];
-
-    document.getElementById("listproduct").innerHTML = product_names[0].type + product_names[0].price;
-    document.getElementById("listproduct").innerHTML += "<br>";
-    document.getElementById("listproduct").innerHTML += product_names[1].type + product_names[1].price;
-
-
-/*
-
-
-
-
-//net is without the tax on products "Shoes" and "TV". We name the variable of these two in the following way and assign a price for each.
-var netPriceOfShoes = 104;
-var netPriceOfTV = 900;
-
-var nameOfShoes = "Sneakers";
-
-var product_names = [
-    "Sneakers",
-    "Boots",
-    "High Heels",
-    "Dressshoes"
-];
-
-var product_price = [
-    "200",
-    "300",
-    "400",
-    "500"
-];
-
-
-var result = document.getElementById("result");
-var result2 = document.getElementById("result2");
-
-document.getElementById("name").innerHTML = nameOfShoes;
-document.getElementById("price").innerHTML = grossPriceOfShoes;
-
-
-var i = 0; // initializing variable i. So i know where to start from.
-
-while(i < product_names.length && i < product_price.length) // Breakdown. "i" starts from 0, which is the "HTML" or [0]. Then continues to run because we have that when "i" is smaller then "classCourses.length"(which is converting it into a number) we just run the loops as many times as the array is long and no more.
-{
-
-    result.innerHTML += product_names[i];
-    result2.innerHTML += product_price[i];
-
-    i++;
-}
 
 
 // Variable of VAT (that can also differ from each country) in this case it is a tax of 23% - we calculate the % later. We can now just change this so see the new prices
-var VAT = 23;
-
-//calculation of our VAT - here we calculate the %
-var calculatedVAT = (1 + VAT * 1/100);
 
 
-// But we still use the (1 + VAT * 1/100) which is not 100% dynamic - we should fix this
-var grossPriceOfShoes = netPriceOfShoes * calculatedVAT;
+var loadProducts = function () {
+    var htmlData = '';
+    htmlData += '<ul = "ul_products">';
+
+    product_names.forEach(function (product) {
+        htmlData += '<li id="li_products">';
+        htmlData += '<img src=' + product.img + '>';
+        htmlData += '<div id="name">' + product.type + '</div>';
+        htmlData += '<div id="price">' + product.price + '</div>';
+        htmlData += '<div id="price3">' + product.price * calculatedVAT + "<br>" + '</div>';
+        htmlData += '<div id="price4">' + "" + '</div>' ;
+        htmlData += '<br><br><a href="">Buy Now!</a>';
+        htmlData += '</li>';
+    });
 
 
-
-
-
-
-
-var div = document.getElementById("test");
-
-div.innerHTML = "";
-
-
-function person(name, surname, age, website)    // just like our document.getElementById();... the function name must be created somewhere in the JavaScript before this could be used. We already created a var Person = {...}
-{
-    this.name = name;
-    this.surname = surname;
+    htmlData += '</ul>';
+    document.getElementById("listproduct").innerHTML = htmlData;
 
 
 
-    this.toString = function()
-    {
-        return this.name + " " + this.surname; //
-    };
-}
 
-var x = new person ("Kristian", "Wittrup");
-var y = new person ("Helmut", "Lotti");
-var z = new person ("Elvis", "Da King");
+};
 
-//personconstructor.innerHTML = x["age"];  // or x.age
-personconstructor.innerHTML = x + "<br>" + y + "<br>" + z;
-*/
+loadProducts();
+
+
+
+
+
+
+
